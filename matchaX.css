@@ -46,5 +46,16 @@ table {
 
 /* RESET CSS (ending) ___________________ */
 
+/* ROOT  */
+
+:root {
+    --color_green: #b4CA91;
+    --color_pink: #EDB3C4;
+    --color_green2: #613A3C;
+    --color_black: #303841;
+    --color_white: #ffffff;
+    --color_black: #000000;
+}
+
 
 
