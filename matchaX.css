@@ -25,26 +25,48 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /* RESET CSS (ending) ___________________ */
+
+/* FONTS */
+
+
+.jost-uniquifier {
+  font-family: "Jost", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /* ROOT  */
 
@@ -56,7 +78,11 @@ table {
     --color_white: #ffffff;
     --color_black: #000000;
 
-    --padding-root: 20px
+    --padding_root: 20px;
+
+    --font_root1: "Jost", serif;
+    --font_root2: "kaushan Script", serif;
+
 }
 
 main{
