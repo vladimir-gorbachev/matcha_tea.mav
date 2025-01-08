@@ -46,5 +46,96 @@ table {
 
 /* RESET CSS (ending) ___________________ */
 
+/* ROOT  */
+
+:root {
+    --color_green: #b4CA91;
+    --color_pink: #EDB3C4;
+    --color_green2: #613A3C;
+    --color_black: #303841;
+    --color_white: #ffffff;
+    --color_black: #000000;
+
+    --padding-root: 20px
+}
+
+main{
+    padding: var(--padding-root);
+}
+
+/* Header Styles */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color:var(--color_white);
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+#logo {
+    /* position: absolute; */
+    
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    width: 60px;
+    height: 60px;
+    /* left: 50px; */
+    
+
+    padding-left: 50px;
+
+}
+
+.header_nav{
+    position: relative;
+    width: 100%;
+    align-self: center;
+    justify-content:flex-end;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+    padding-right: 2%;
+}
+
+nav>li,a {
+    text-decoration: none;
+    font-size: 1em;
+    color:var(--color_green);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:var(--color_green2);
+    font-weight: bold;
+    
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color:var(--color_pink);
+    width: 0;
+    transition: width 0.3s ease;
+    margin-top: 5px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
 
 

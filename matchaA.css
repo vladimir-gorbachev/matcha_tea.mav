@@ -1,0 +1,122 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E3ECD5;
+}
+
+.products {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    padding: 10px;
+}
+
+
+.product-fig{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 5%;
+    filter:blur(0);
+    transition: filter 0.1s ease-in-out;
+    position: relative;
+    z-index: 1; 
+}
+
+.product-caption{
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.13);
+    color:#000000;
+    font-size: 16px;
+    opacity:0;
+    z-index: 2; 
+    transition: opacity 0.3s ease;
+    margin: 20px;
+    padding: 10%;
+    
+}
+
+.product-fig:hover img{
+    filter: blur(5px);
+}
+.product-fig:hover>.product-caption{
+    opacity: 1;
+}
+
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5%;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+
+.product-price {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+.add-to-cart {
+    background-color: #90B458;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #219150;
+}
+
+/* Media queries : au-delà de 768px */
+@media (min-width: 768px) {
+    .products {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+
+    .product-card {
+        flex: 1 1 calc(33.33% - 20px); 
+    }
+}
+
+/* Media queries : au-delà de 1200px */
+@media (min-width: 1200px) {
+    .product-card {
+        flex: 1 1 calc(25% - 20px); 
+    }
+}
