@@ -15,7 +15,7 @@ body{
     display: flex;
     text-align: justify;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 
 }
 
@@ -40,6 +40,8 @@ body{
     z-index: 2; 
     transition: opacity 0.3s ease;
     margin: 20px;
+    padding: 10%;
+    
 }
 
 .product-fig:hover img{
