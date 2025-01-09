@@ -33,15 +33,15 @@ body{
 
 .product-caption{
     position:absolute;
-    background-color: rgba(0, 0, 0, 0.13);
     color:#000000;
     font-size: 16px;
     opacity:0;
     z-index: 2; 
     transition: opacity 0.3s ease;
-    margin: 20px;
+    margin: 5%;
     padding: 10%;
-    
+    line-height: 1.5em;
+
 }
 
 .product-fig:hover img{
