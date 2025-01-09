@@ -10,8 +10,58 @@ body{
     top: 0;
     object-fit:cover;
 
-    width: 100vw;
+    align-self: center;
+
+    width: 100%;
     height: 100vh;
 
     z-index: -50;
+}
+
+#vamatcha_products_blend{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+#vamatcha_bag_and_cup{
+    position: relative;
+    z-index: -49;
+    width: 50%;
+    aspect-ratio: 1/1;
+
+    right: 150px;
+    bottom: 120px;
+
+    object-fit: contain;
+
+}
+
+#green_drink{
+    position: relative;
+    z-index: -48;
+    width: 50%;
+    aspect-ratio: 1/1;
+
+    left: 100px;
+    top: 90px;
+
+    object-fit: contain;
+
+}
+
+#vamatcha_cosmetics{
+    position: relative;
+    z-index: -47;
+    width: 20%;
+    aspect-ratio: 1/1;
+
+    bottom: 22%;
+
+    object-fit: contain;
+
 }
