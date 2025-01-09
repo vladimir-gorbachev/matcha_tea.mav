@@ -19,12 +19,15 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: "Poppins", serif;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
 }
 
 ol, ul {
@@ -81,35 +84,30 @@ table {
 }
 
 header {
-    position: relative;
+
     width: 100%;
     min-height: 15vh;
     background: linear-gradient(180deg, rgba(255,255,255,1) 77%, rgba(255,255,255,0.5282445741968662) 86%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
 
-    justify-self: center;
-    justify-items: center;
-    justify-content: space-around;
+    
+
+    align-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo_vamatcha {
+
+    position: relative;
+    display: flex;
+
 
     width: 70px;
     height: 70px;
 
     object-fit: contain;
     z-index: 100;
-}
-
-#logo_vamatcha_sidebar{
-    
-    position: relative;
-    display: flex;
-
-    align-self: center;
-    justify-content: center;
-    top: 5px;
-
 }
 
 .lateral_nav{
@@ -214,43 +212,68 @@ body,main{
     z-index: -50;
 }
 
+/* FOOTER ----------------------------------------------- */
+
 footer{
     position: absolute;
-    bottom: 0;
 
     background: linear-gradient(180deg,(--color_white)0.5,rgba(255, 255, 255, 0.2) 1);
     
     z-index: 10;
     max-width: 100%;
-    max-height: 100vh;
+
+    flex: 1;
    
-    width: 100vw;
+    width: 100%;
+    height: 20%;
     display: flex;
+
+    flex-flow: row;
+
+    justify-content: space-around;
+
+    align-items: flex-start;
 }
 
-
-#logo_vamatcha_footer{
-    position: absolute;
-    left: 10vw;
-    bottom: -88px;
+#footer_box{
+    width: 100%;
+    height: 100%;
+    
 }
+
 
 .footer_nav{
     position: relative;
     top: 75px;
-    left: 30%;
-    width: 70%;
-    height: 100%;
+    width: 60%;
+    height: 10%;
+
+    flex: 1;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 
     align-self: center;
 
     text-align: center;
 
+    flex:1;
+
     
+}
+
+#footer_central_block{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#thx_footer{
+    background-color: #E0CAA5;
+    width:200%;
+    height:100px;
 }
 
 .footer_nav>ul a{
@@ -261,9 +284,6 @@ footer{
     flex: 1;
 
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    flex-flow: column wrap;
     align-self: center;
 
 }
@@ -273,12 +293,10 @@ footer{
 
     flex: 1;
 
-    flex-flow: wrap row;
-    justify-self: flex-start;
+    flex-flow: wrap column;
     align-items: center;
 
-    justify-content: space-around;
-    align-items: center;
+    
 }
 
 
