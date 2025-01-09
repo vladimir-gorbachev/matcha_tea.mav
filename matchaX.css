@@ -27,12 +27,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-    width: 100%;
-    /* overflow-x: hidden; */
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -88,40 +82,34 @@ table {
 
 header {
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 15vh;
     background: linear-gradient(180deg, rgba(255,255,255,1) 77%, rgba(255,255,255,0.5282445741968662) 86%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
 
-    margin-bottom: 10px;
+    justify-self: center;
+    justify-items: center;
+    justify-content: space-around;
 }
 
 .logo_vamatcha {
-    position: relative;
-    display: flex;
-    
-    justify-self: center;
-   
+
     width: 70px;
-    height: auto;
+    height: 70px;
 
     object-fit: contain;
     z-index: 100;
 }
 
-
-
-#header_nav{
+#logo_vamatcha_sidebar{
+    
     position: relative;
     display: flex;
-    flex-flow: row wrap;
 
-    width: 100%;
     align-self: center;
-    align-items: center;
-    justify-content:space-around;
+    justify-content: center;
+    top: 5px;
 
-    /* overflow-x: hidden; */
 }
 
 .lateral_nav{
@@ -136,8 +124,6 @@ header {
     box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.238);
 
     z-index: 100;
-
-   
 }
 
 .lateral_nav_list{
@@ -146,7 +132,7 @@ header {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
 
     writing-mode:vertical-lr;
     flex:1;
@@ -170,8 +156,6 @@ header {
         width:1000%;
     }
 }
-
-
 
 #shopping_bag_logo{
     width: 30px;
@@ -210,17 +194,13 @@ nav ul li a:hover::after {
     max-width: 100%;
 }
 
-body{
-    /* background-image: url(../matcha_tea.mav/img/image\ 15.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center; */
-
-
+body,main{
     z-index: -10;
 
-    height: 100vh;
+    height: 100%;
     max-width: 100%;
+
+    overflow-x: hidden;
 }
 
 #green_powder{
@@ -228,8 +208,8 @@ body{
     top: 0;
     object-fit:cover;
 
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     z-index: -50;
 }
@@ -237,10 +217,8 @@ body{
 footer{
     position: absolute;
     bottom: 0;
-    
 
-    background: linear-gradient(180deg,(--color_white)0.5,rgba(255, 255, 255, 0.44) 0.9);
-
+    background: linear-gradient(180deg,(--color_white)0.5,rgba(255, 255, 255, 0.2) 1);
     
     z-index: 10;
     max-width: 100%;
@@ -248,19 +226,18 @@ footer{
    
     width: 100vw;
     display: flex;
-
 }
 
 
 #logo_vamatcha_footer{
     position: absolute;
     left: 10vw;
-    bottom: -98px;
+    bottom: -88px;
 }
 
 .footer_nav{
-    position: absolute;
-    top: 70px;
+    position: relative;
+    top: 75px;
     left: 30%;
     width: 70%;
     height: 100%;
