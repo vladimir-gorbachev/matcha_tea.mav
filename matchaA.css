@@ -1,15 +1,14 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #E3ECD5;
 }
 
+/* SHOP */
 .products {
     display: flex;
     flex-direction: column; 
     gap: 30px;
     padding: 10px;
 }
-
 
 .product-fig{
     display: flex;
@@ -47,10 +46,10 @@ body{
 .product-fig:hover img{
     filter: blur(5px);
 }
+
 .product-fig:hover>.product-caption{
     opacity: 1;
 }
-
 
 .product-card {
     background-color: #fff;
@@ -67,10 +66,6 @@ body{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-
-
-
-
 .product-name {
     font-size: 1rem;
     font-weight: bold;
@@ -78,13 +73,11 @@ body{
     margin: 10px 0 5px;
 }
 
-
 .product-price {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 10px;
 }
-
 
 .add-to-cart {
     background-color: #90B458;
@@ -120,3 +113,5 @@ body{
         flex: 1 1 calc(25% - 20px); 
     }
 }
+
+/* STORY */
