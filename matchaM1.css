@@ -1,0 +1,41 @@
+body{
+font-family: "Poppins", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.profil h1{
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 64px;
+    color:#E0CAA5;
+    font-weight: bold;
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.list li{
+    background-color: #9BBC69;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px ;
+}
+
+.profil span{
+    border-bottom: solid 2px;
+    font-weight: bold;
+}
