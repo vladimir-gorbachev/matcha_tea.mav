@@ -6,22 +6,61 @@ font-style: normal;
 
 .p_contact{
     display: flex;
-    gap: 2.5em;
-
+    justify-content: flex-start;
+    align-items: flex-start;
     padding: 10%;
+   
 }
 
 h1{
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 64px;
+    color:#E0CAA5;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    gap: 1.5em;
+}
+.message_contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;   
+    border-right: solid 3px;  
+    gap: 1em;
+    padding-right: 50px;
+}
+
+.form{
+    width: 50%;
+    padding-top: 50px;
+}
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    background-color: #74A12E;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form p{
     text-align: center;
 }
 
-.message_contact{
-    width: 50%;   
-    border-right: solid 3px;  
+.form input{
+    height: 50px;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 2.5em;;
+.form span{
+    text-align: center;
+    background-color: #74A12E;
+    border: 5px;
 }
+
+
