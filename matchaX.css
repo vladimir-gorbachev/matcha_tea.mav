@@ -19,12 +19,15 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: "Poppins", serif;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
 }
 
 ol, ul {
@@ -231,26 +234,39 @@ footer{
 
 #logo_vamatcha_footer{
     position: absolute;
-    left: 10vw;
+    left: 90vw;
     bottom: -88px;
 }
 
 .footer_nav{
     position: relative;
     top: 75px;
-    left: 30%;
-    width: 70%;
+    width: 60%;
     height: 100%;
 
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 
     align-self: center;
 
     text-align: center;
 
+    flex:1;
+
     
+}
+
+#footer_central_block{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#thx_footer{
+    background-color: #E0CAA5;
+    width:200%;
+    height:100px;
 }
 
 .footer_nav>ul a{
@@ -261,9 +277,6 @@ footer{
     flex: 1;
 
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    flex-flow: column wrap;
     align-self: center;
 
 }
@@ -273,12 +286,10 @@ footer{
 
     flex: 1;
 
-    flex-flow: wrap row;
-    justify-self: flex-start;
+    flex-flow: wrap column;
     align-items: center;
 
-    justify-content: space-around;
-    align-items: center;
+    
 }
 
 
