@@ -1,0 +1,27 @@
+body{
+font-family: "Poppins", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.p_contact{
+    display: flex;
+    gap: 2.5em;
+
+    padding: 10%;
+}
+
+h1{
+    text-align: center;
+}
+
+.message_contact{
+    width: 50%;   
+    border-right: solid 3px;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;;
+}
