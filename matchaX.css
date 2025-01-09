@@ -54,19 +54,6 @@ table {
 /* FONTS */
 
 
-.jost-uniquifier {
-  font-family: "Jost", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.kaushan-script-regular {
-    font-family: "Kaushan Script", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 
 /* ROOT  */
 
@@ -78,7 +65,7 @@ table {
     --color_white: #ffffff;
     --color_black: #000000;
 
-    --font_root1: "Jost", serif;
+    --font_root1: "poppins", serif;
     --font_root2: "kaushan Script", serif;
 
 }

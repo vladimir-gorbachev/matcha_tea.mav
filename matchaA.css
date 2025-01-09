@@ -1,15 +1,14 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #E3ECD5;
 }
 
+/* SHOP */
 .products {
     display: flex;
     flex-direction: column; 
     gap: 30px;
     padding: 10px;
 }
-
 
 .product-fig{
     display: flex;
@@ -47,10 +46,10 @@ body{
 .product-fig:hover img{
     filter: blur(5px);
 }
+
 .product-fig:hover>.product-caption{
     opacity: 1;
 }
-
 
 .product-card {
     background-color: #fff;
@@ -67,10 +66,6 @@ body{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-
-
-
-
 .product-name {
     font-size: 1rem;
     font-weight: bold;
@@ -78,13 +73,11 @@ body{
     margin: 10px 0 5px;
 }
 
-
 .product-price {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 10px;
 }
-
 
 .add-to-cart {
     background-color: #90B458;
@@ -119,4 +112,109 @@ body{
     .product-card {
         flex: 1 1 calc(25% - 20px); 
     }
+}
+
+/* STORY */
+
+.story-H1{
+    font-size: xx-large;
+    text-align: center;
+    background-color: #91b45880;
+    border-radius: 5%;
+}
+
+.story-H3{
+    font-size: x-large;
+    margin:5%;
+}
+
+.story-H4{
+    font-weight: bold;
+}
+
+.story-p{
+    text-align: justify;
+    margin: 5%;
+    font-size: 10px;
+}
+
+.story-li{
+    list-style:circle;
+    font-size: 10px;
+    align-items: center;
+    margin: 5%;
+}
+
+.story-image{
+    width: 50%; 
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    justify-content: center;
+    border-radius: 5%;
+    
+}
+
+.story-about{
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+}
+
+.story-engagement{
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+}
+
+.story-why{
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+}
+
+.story-service{
+    display: flex;
+    flex-flow: nowrap column;
+    align-items: center;
+}
+
+/* Media queries : au-delà de 768px */
+@media (min-width: 768px) {
+
+    .story-p{
+        font-size: 14px;
+    }
+    
+    .story-li{
+        font-size: 14px;
+    }
+    
+    .story-about{
+        flex-flow: nowrap row;
+    }
+    
+    .story-engagement{
+        flex-flow: nowrap row-reverse;  
+    }
+    
+    .story-why{
+        flex-flow: nowrap row; 
+    }
+    
+    .story-service{
+        flex-flow: nowrap row-reverse;
+    }
+
+}
+
+@media (min-width: 1020px) {
+    .story-p{
+        font-size: 18px;
+    }
+
+    .story-li{
+        font-size: 18px;
+    }
+
 }
