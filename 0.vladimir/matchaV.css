@@ -1,9 +1,21 @@
-body{
-    z-index: -10;
+body,main{
+    
 
     height: 100vh;
     max-width: 100%;
+    width: 100%;
+
+    display: flex;
+/* 
+    flex-flow: column wrap; */
+    
+
+    justify-content: center;
+    align-items: center;
+
+
 }
+
 
 #green_powder{
     position: absolute;
@@ -12,56 +24,118 @@ body{
 
     align-self: center;
 
-    width: 100%;    
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     z-index: -50;
 }
 
-#vamatcha_products_blend{
-    width: 100%;
-    height: 100%;
+.product_matcha, .product_matcha>img{
 
     display: flex;
+    width: 80%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    
+
+    align-items: center;
+    align-self: center;
     justify-content: center;
-   
+
+}
+
+h2{
+    position: relative;
+    font-family:var(--font_root2) ;
+    font-size:40px;
+    left: -25%;
+    text-align: center;
+    color: #359238;
+}
+
+.our_best_sells {
+
+    background-color: white;
+
+
+    width: 80%;
+    height: 150vh;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+
+    flex: 1;
+
+
+    top:110%;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.our_best_sells hr {
+    border: 0;
+    height: 1px;
+
+    width: 100%;
+    background: #ddd;
+    margin: 20px 0;
+
     
 }
 
-#vamatcha_bag_and_cup{
-    position: absolute;
-    z-index: -49;
-    width: 50%;
-    aspect-ratio: 1/1;
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 
-    right: 150px;
-    bottom: 120px;
+    flex: 1;
 
-    object-fit: contain;
-
+    width: 30%;
 }
 
-#green_drink{
-    position: absolute;
-    z-index: -48;
-    width: 50%;
-    aspect-ratio: 1/1;
-
-    left: 100px;
-    top: 90px;
-
-    object-fit: contain;
-
+.product {
+    flex: 1;
+    text-align: center;
 }
 
-#vamatcha_cosmetics{
-    position: absolute;
-    z-index: -47;
-    width: 20%;
-    aspect-ratio: 1/1;
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
-    bottom: 22%;
+.product figcaption {
+    font-size: 1.1em;
+    color: #333;
+    margin: 5px 0;
+}
 
-    object-fit: contain;
+.product .price {
+    font-size: 1em;
+    color: #555;
+    font-weight: bold;
+}
 
+/* Bouton voir plus */
+#see_more {
+    background: #4CAF50;
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+.see_more:hover {
+    background: #45a049;
 }

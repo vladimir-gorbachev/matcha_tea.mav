@@ -23,9 +23,14 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
 
-
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 
@@ -49,19 +54,6 @@ table {
 /* FONTS */
 
 
-.jost-uniquifier {
-  font-family: "Jost", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.kaushan-script-regular {
-    font-family: "Kaushan Script", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 
 /* ROOT  */
 
@@ -73,13 +65,15 @@ table {
     --color_white: #ffffff;
     --color_black: #000000;
 
-    --font_root1: "Jost", serif;
+    --font_root1: "poppins", serif;
     --font_root2: "kaushan Script", serif;
 
 }
 
 header {
-    position: relative;
+
+    top: 0;
+
     width: 100%;
     min-height: 15vh;
     background: linear-gradient(180deg, rgba(255,255,255,1) 77%, rgba(255,255,255,0.5282445741968662) 86%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
@@ -113,6 +107,7 @@ header {
 .lateral_nav{
     position:fixed;
     left: 0;
+    top:100px;
     background-color: var(--color_white);
     border-radius: 0px 10px 10px 0;
     width: 50px;
@@ -122,11 +117,17 @@ header {
     box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.238);
 
     z-index: 100;
+
+    ul li a{
+        z-index: 100;
+    }
+
 }
 
-.lateral_nav_list{
+#lateral_nav_list{
 
     position: sticky;
+    z-index: -1000;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -134,9 +135,6 @@ header {
 
     writing-mode:vertical-lr;
     flex:1;
-
-    z-index: 100;
-
 
     transform:rotate(180deg);
     
@@ -151,8 +149,11 @@ header {
     height: auto;
 
     hr{
-        width:1000%;
+        width:100%;
     }
+
+    
+    
 }
 
 #shopping_bag_logo{
@@ -167,7 +168,6 @@ header {
     color:var(--color_green);
     position: relative;
     transition: color 0.3s ease;
-    height: auto;
     
 }
 
@@ -175,16 +175,6 @@ header {
 nav ul li a:hover {
     color:var(--color_green2);
     font-weight: bold;
-    
-}
-
-.footer_nav ul li a::after {
-    content: "";
-    display: flex;
-    height: 2px;
-    background-color:var(--color_pink);
-    width: 0;
-    transition: width 0.3s ease;
     
 }
 
@@ -199,42 +189,44 @@ body,main{
     max-width: 100%;
 
     overflow-x: hidden;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-#green_powder{
-    position: absolute;
-    top: 0;
-    object-fit:cover;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: -50;
-}
 
 footer{
-    position: absolute;
-    bottom: 0;
 
-    background: linear-gradient(180deg,(--color_white)0.5,rgba(255, 255, 255, 0.2) 1);
+    z-index: -1000;
+
+    background-color: var(--color_green);
+    bottom: -130%;
+
+    color: var(--color_green2);
+
+    justify-content: center;
+
     
-    z-index: 10;
     max-width: 100%;
     max-height: 100vh;
    
-    width: 100vw;
-    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+
+    align-items: center;
+    align-self: center;
+
+    padding: 20px;
 }
 
 
 #logo_vamatcha_footer{
-    position: absolute;
-    left: 90vw;
+    
+    left: 100vw;
     bottom: -88px;
 }
 
-.footer_nav{
-    position: relative;
+#footer_nav{
+   
     top: 75px;
     width: 60%;
     height: 100%;
@@ -250,11 +242,29 @@ footer{
     flex:1;
 
     
+
+    
+}
+
+.footer_nav ul li a::after {
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color:var(--color_pink);
+    width: 0;
+    transition: width 0.3s ease;
+    color: #000000;
+    
 }
 
 #footer_central_block{
+
+    width: 40%;
+
     display: flex;
+    left: -20%;
     flex-flow: row wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -277,6 +287,9 @@ footer{
 }
 
 .footer_list{
+
+    width: 100%;
+    
     display: flex;
 
     flex: 1;
@@ -284,7 +297,12 @@ footer{
     flex-flow: wrap column;
     align-items: center;
 
+    padding: 20px;
+    
+
     
 }
+
+
 
 
