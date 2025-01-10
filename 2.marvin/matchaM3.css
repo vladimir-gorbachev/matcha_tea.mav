@@ -1,0 +1,57 @@
+.table img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.product{
+    text-align: center;
+    border:solid 1px ;
+    background-color: white;
+
+}
+
+textarea{
+    height: 100px;
+    width: 10%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    gap: 12em;
+    
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+input[type="name"]{
+    width: 50px;
+}
+
+body{
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+h1{
+    font-family: "Kaushan Script", serif;
+    text-align: center;
+    font-size: 64px;
+    color:#E0CAA5;
+    font-weight: 400;
+}
