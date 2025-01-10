@@ -10,36 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Liu+Jian+Mao+Cao&family=Lobster&family=Lugrasimo&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+3D&family=Rubik+80s+Fade&family=Rubik+Glitch&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="matchaX.css">
-    <link rel="stylesheet" href="./0.vladimir/matchaV.css">
+    <!-- <link rel="stylesheet" href="./0.vladimir/matchaV.css"> -->
 
 </head>
+
 <body>
-<header>
-    <figure>
-        <section class="head_search">
-            <div class="shop_and_search" >
-                <a href="./index.html"> <img src="./img/logo_vamatcha.png" id="logo_vamatcha_header" alt="logo Vamatcha"> </a>
+    <header>
+        <section class="header">
+            <div class="header-menu-burger">
+                <img src="img/icons8-menu-50.png" class="burger-logo">
             </div>
-                <div class="shop_and_search1">
-                    <a href="./shop.html"><img src="./img/Shopping bag.png" alt="shopping_bag_logo" class="logo">
-                    </a>
-                    <img src="./img/Search.png" alt="search_logo" class="logo">
-                </div>
-        </section>
-    </figure>  
-</header>
-
-
+            <div class="header-logo" >
+                <a href="./index.html"><img src="./img/logo_vamatcha.png" class="header-logo" alt="logo Vamatcha"></a>
+            </div>
+            <div class="shop_and_search">
+                <img src="./img/Shopping bag.png" alt="shopping_bag_logo" class="header-logo-search"></a>
+                <img src="./img/Search.png" alt="search_logo" class="header-logo-search">
+            </div>
+        </section> 
+    </header>
 
     <main>
-        <figure>
-            <img src="./img/image 15.png" alt="green macha powder image" id="green_powder">
-            <div class="product_matcha">
-                <img src="./img/vamatcha products (blended).png"  alt="vamatcha products">
-            </div>
-        </figure>
+        <div class="index-img">
+            <img src="./img/vamatcha products (blended).png"  alt="vamatcha products" class="index-glass">
+            <img src="./img/image 15.png" alt="green macha powder image" class="index-back">
+        </div>
         
-        
+
         <nav class="lateral_nav">
             <ul id="lateral_nav_list">
                 <li><a href="./contact.html">Contact</a></li>
@@ -55,25 +52,22 @@
                 </li>   
                 
             </ul>
-
         </nav>
-        <section class="our_best_sells">
+
+        <!-- <section class="our_best_sells">
             <h2>Nos Meilleures Ventes</h2>
             <hr>
             <div class="products">
-                <!-- Colonne 1 -->
                 <figure class="product">
                     <img src="./img/vamatcha_n_1 (1).png" alt="Matcha Premium">
                     <figcaption>Matcha Premium</figcaption>
                     <p class="price">29,99€</p>
                 </figure>
-                <!-- Colonne 2 -->
                 <figure class="product">
                     <img src="./img/vamatcha_n_1 (1).png" alt="Matcha Ceremonial">
                     <figcaption>Matcha Ceremonial</figcaption>
                     <p class="price">34,99€</p>
                 </figure>
-                <!-- Colonne 3 -->
                 <figure class="product">
                     <img src="./img/vamatcha_n_1 (1).png" alt="Matcha Latte">
                     <figcaption>Matcha Latte</figcaption>
@@ -82,39 +76,37 @@
             </div>
             <hr>
             <button id="see_more">Voir plus</button>
-        </section>
+        </section> -->
     </main>
 
-
     <footer>
-        <nav id="footer_nav">
-            <ul class="footer_list">
-                <li class="">
+        <nav class="footer_nav">
+            <div class="footer_link">
+                <p>
                     <a href="../matcha_tea.mav/shop.html"> Nos Produits </a>
-                </li>
-                <li class="">
+                </p>
+                <p>
                     <a href="../matcha_tea.mav/apropos.html"> A propos </a>
-                </li>
-                <li class="">
-                    <a href="../matcha_tea.mav/histoire.html"> L'Histoire du VaMatcha </a>
-                </li>
-                <li class="">
+                </p>
+                <p>
+                    <a href="../matcha_tea.mav/histoire.html"> L'Histoire de VaMatcha </a>
+                </p>
+                <p>
                     <a href="./contact.html"> Contact </a>
-                </li>
-            </ul>
-            <ul id="footer_central_block">
-                <li id="thx_footer" class="kaushan-script-regular">Merci de votre visite et à bientôt</li>
-                <li>VAM 2023</li>
-            </ul>
-            <ul>
-                <li>Vamatcha</li>
-                <li>13002 Marseille</li>
-                <li>11 rue du Panier</li>
-            </ul>
-            <li><a href="../matcha_tea.mav/index.html"> <img src="./img/logo_vamatcha.png" class="logo" id="logo_vamatcha_footer" alt="logo Vamatcha"> </a></li>
+                </p>
+            </div>
+            <div class="footer-thanks">
+                <p>Merci de votre visite et à bientôt<p>
+                <p>VAM 2023</p>
+            </div>
+            <div class="footer-adress">
+                <p>Vamatcha</p>
+                <p>13002 Marseille</p>
+                <p>11 rue du Panier</p>
+                <a href="../matcha_tea.mav/index.html"> <img src="./img/logo_vamatcha.png" class="footer-logo" alt="logo Vamatcha"></a>
+            </div>
         </nav>
-
     </footer>
-    
+        
 </body>
 </html>

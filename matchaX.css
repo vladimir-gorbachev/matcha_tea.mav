@@ -1,56 +1,3 @@
-    /* RESET CSS ___________________ */
-/* 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: "Poppins", serif;
-}
-
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-} */
-
-/* ol, ul, li {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
-
-/* ROOT  */
-
 :root {
     --color_green: #b4CA91;
     --color_pink: #EDB3C4;
@@ -58,47 +5,75 @@ table {
     --color_black: #303841;
     --color_white: #ffffff;
     --color_black: #000000;
-
     --font_root1: "poppins", serif;
     --font_root2: "kaushan Script", serif;
 
 }
 
-header {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 77%, rgba(255,255,255,0.5282445741968662) 86%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
-   
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font_root1);
+    font-size: 12px;
 }
 
-.head_search{
+/* HEADER */
+
+.header{
     display: flex;
-    justify-content: center;
+    flex-flow: nowrap row;
     align-items: center;
-    gap: 5em;
-    padding-left: 40%;
+    justify-content: space-between;
+    margin:0 2% ;
 }
 
-.shop_and_search1{
-    padding-left: 60%;
+.header-logo{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 80px;
+}
+
+.header-logo-search{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 30px;
+}
+
+.burger-logo{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 30px;
 }
 
 
-.logo {
+/* INDEX */
 
-    width: 30px;
-    height: 30px;
-    z-index: 100;
+.index-back{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
-#logo_vamatcha_header{
-    width: 100px;
-    height: auto;
+.index-glass{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+
 }
 
-.lateral_nav{
+.index-img{
+    height: 300px;
+    position: relative;
+    width: 100%;
+
+}
+/* .lateral_nav{
     position:fixed;
     left: 0;
     top:100px;
@@ -111,10 +86,6 @@ header {
 
     z-index: 100;
 
-    /* ul li a{
-        z-index: 100;
-        width: 100px;
-    } */
 
 }
 
@@ -130,23 +101,14 @@ header {
     flex-flow: column-reverse, wrap;
     justify-content: center;
     align-items: center;
-   gap: 40px;
-    
     height: 90%;;
-
-
     writing-mode:vertical-lr;
     flex:1;
-    
-  
-
-
     text-decoration: none;
     font-size: calc(0,8vw + 10px);
     color:var(--color_green);
     position: relative;
     transition: color 0.3s ease;
-
 
     hr{
         width:100%;
@@ -182,118 +144,43 @@ nav ul li a:hover::after {
 }
 
 
+ */
 
-
-footer{
-
-    z-index: -1000;
-
+ /* FOOTER */
+footer {
     background-color: var(--color_green);
-
-    color: var(--color_green2);
-
-    justify-content: center;
-
-    
-    /* max-width: 100%;
-    max-height: 100vh;
-   
-    width: 100%; */
-    flex-flow: row wrap;
-
-    align-items: center;
-    align-self: center;
-
-    padding: 20px;
-}
-
-
-#logo_vamatcha_footer{
-    
-    left: 100vw;
-    bottom: -88px;
-}
-
-#footer_nav{
-   
-    top: 75px;
-    width: 60%;
-    height: 10%;
-
-    flex: 1;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
-    align-self: center;
-
+    color: var(--color_black);
     text-align: center;
-
-    flex:1;
-
-    
-
-    
-}
-
-.footer_nav ul li a::after {
-    content: "";
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer_nav {
     display: flex;
-    height: 2px;
-    background-color:var(--color_pink);
-    width: 0;
-    transition: width 0.3s ease;
-    color: #000000;
-    
-}
-
-#footer_central_block{
-
-    width: 40%;
-
-    display: flex;
-    left: -20%;
-    flex-flow: row wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    align-items: center;
-}
-
-#thx_footer{
-    background-color: #E0CAA5;
-    width:200%;
-    height:100px;
-}
-
-.footer_nav>ul a{
-
-    width: 100%;
-    height: 100%;
-
-    flex: 1;
-
+  }
+  
+  .footer_link {
     display: flex;
-    align-self: center;
-
-}
-
-.footer_list{
-
-    width: 100%;
-    
-    display: flex;
-
-    flex: 1;
-
-    flex-flow: wrap column;
-    align-items: center;
-
-    padding: 20px;
-    
-
-    
-}
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    gap:15px;
+  }
+  
+  .footer_link a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-thanks, .footer-adress {
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo {
+    max-width: 100px;
+    margin-top: 10px;
+  }
 
 
 
