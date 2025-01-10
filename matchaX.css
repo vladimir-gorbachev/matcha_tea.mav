@@ -1,5 +1,5 @@
-/* RESET CSS ___________________ */
-
+    /* RESET CSS ___________________ */
+/* 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,14 +23,14 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: flex;
     justify-content: space-around;
-    flex-flow: column wrap;
-}
+    flex-flow: row wrap;
+} */
 
-ol, ul {
+/* ol, ul, li {
 	list-style: none;
 }
 
@@ -47,7 +47,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 
 /* ROOT  */
 
@@ -65,68 +65,80 @@ table {
 }
 
 header {
-    position: relative;
+    position: absolute;
+    top: 0%;
     width: 100%;
-    min-height: 15vh;
     background: linear-gradient(180deg, rgba(255,255,255,1) 77%, rgba(255,255,255,0.5282445741968662) 86%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.1);
-
-    justify-self: center;
-    justify-items: center;
-    justify-content: space-around;
+   
 }
 
-.logo_vamatcha {
+.head_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding-left: 40%;
+}
 
-    width: 70px;
-    height: 70px;
+.shop_and_search1{
+    padding-left: 60%;
+}
 
-    object-fit: contain;
+
+.logo {
+
+    width: 30px;
+    height: 30px;
     z-index: 100;
 }
 
-#logo_vamatcha_sidebar{
-    
-    position: relative;
-    display: flex;
-
-    align-self: center;
-    justify-content: center;
-    top: 5px;
-
+#logo_vamatcha_header{
+    width: 100px;
+    height: auto;
 }
 
 .lateral_nav{
     position:fixed;
     left: 0;
+    top:100px;
     background-color: var(--color_white);
     border-radius: 0px 10px 10px 0;
-    width: 50px;
-    height: 80vh;
+    width: 60px;
     display: flex;
     flex-flow: column wrap;
     box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.238);
 
     z-index: 100;
+
+    /* ul li a{
+        z-index: 100;
+        width: 100px;
+    } */
+
 }
 
-.lateral_nav_list{
+.lateral_nav img{
+    height: 80px;
+    width: 45px
+}
 
-    position: sticky;
+#lateral_nav_list{
+
+    z-index: -1000;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column-reverse, wrap;
     justify-content: center;
-    max-width: 100%;
+    align-items: center;
+   gap: 40px;
+    
+    height: 90%;;
+
 
     writing-mode:vertical-lr;
     flex:1;
-
-    z-index: 100;
-
-
-    transform:rotate(180deg);
     
-    align-items:center;
+  
 
 
     text-decoration: none;
@@ -134,11 +146,12 @@ header {
     color:var(--color_green);
     position: relative;
     transition: color 0.3s ease;
-    height: auto;
+
 
     hr{
-        width:1000%;
-    }
+        width:100%;
+    }   
+    
 }
 
 #shopping_bag_logo{
@@ -147,13 +160,13 @@ header {
 }
 
 
-#header>nav>li,a {
+li,a {
+    list-style-type: none;
     text-decoration: none;
     font-size: calc(0,8vw + 10px);
     color:var(--color_green);
     position: relative;
     transition: color 0.3s ease;
-    height: auto;
     
 }
 
@@ -164,66 +177,50 @@ nav ul li a:hover {
     
 }
 
-.footer_nav ul li a::after {
-    content: "";
-    display: flex;
-    height: 2px;
-    background-color:var(--color_pink);
-    width: 0;
-    transition: width 0.3s ease;
-    
-}
-
 nav ul li a:hover::after {
     max-width: 100%;
 }
 
-body,main{
-    z-index: -10;
 
-    height: 100%;
-    max-width: 100%;
 
-    overflow-x: hidden;
-}
-
-#green_powder{
-    position: absolute;
-    top: 0;
-    object-fit:cover;
-
-    width: 100%;
-    height: 100%;
-
-    z-index: -50;
-}
 
 footer{
-    position: absolute;
-    bottom: 0;
 
-    background: linear-gradient(180deg,(--color_white)0.5,rgba(255, 255, 255, 0.2) 1);
+    z-index: -1000;
+
+    background-color: var(--color_green);
+
+    color: var(--color_green2);
+
+    justify-content: center;
+
     
-    z-index: 10;
-    max-width: 100%;
+    /* max-width: 100%;
     max-height: 100vh;
    
-    width: 100vw;
-    display: flex;
+    width: 100%; */
+    flex-flow: row wrap;
+
+    align-items: center;
+    align-self: center;
+
+    padding: 20px;
 }
 
 
 #logo_vamatcha_footer{
-    position: absolute;
-    left: 90vw;
+    
+    left: 100vw;
     bottom: -88px;
 }
 
-.footer_nav{
-    position: relative;
+#footer_nav{
+   
     top: 75px;
     width: 60%;
-    height: 100%;
+    height: 10%;
+
+    flex: 1;
 
     display: flex;
     flex-flow: row wrap;
@@ -236,12 +233,31 @@ footer{
     flex:1;
 
     
+
+    
+}
+
+.footer_nav ul li a::after {
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color:var(--color_pink);
+    width: 0;
+    transition: width 0.3s ease;
+    color: #000000;
+    
 }
 
 #footer_central_block{
+
+    width: 40%;
+
     display: flex;
+    left: -20%;
     flex-flow: row wrap;
+    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 #thx_footer{
@@ -263,6 +279,9 @@ footer{
 }
 
 .footer_list{
+
+    width: 100%;
+    
     display: flex;
 
     flex: 1;
@@ -270,7 +289,12 @@ footer{
     flex-flow: wrap column;
     align-items: center;
 
+    padding: 20px;
+    
+
     
 }
+
+
 
 
