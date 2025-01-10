@@ -5,7 +5,7 @@ body{
 
 /* SHOP */
 
-.shop-H1{
+.header-shop{
     font-size: xx-large;
     text-align: center;
     background-color: #91b45880;
@@ -103,7 +103,7 @@ body{
     background-color: #219150;
 }
 
-/* Media queries : au-delà de 768px */
+/* Media queries : + 768px */
 @media (min-width: 768px) {
     .products {
         padding: 5%;
@@ -117,7 +117,7 @@ body{
     }
 }
 
-/* Media queries : au-delà de 1200px */
+/* Media queries : + 1200px */
 @media (min-width: 1200px) {
     .product-card {
         flex: 1 1 calc(25% - 20px); 
