@@ -38,15 +38,18 @@ body{
 
 .product-caption{
     position:absolute;
-    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color:#000000;
-    font-size: 16px;
+    font-size: 10px;
     opacity:0;
     z-index: 2; 
     transition: opacity 0.3s ease;
-    width: inherit;
-    line-height: 1.5em;
+    width: 80%;
     text-align: center;
+    border-radius: 5px;
+    line-height: 1.5em;
 
 }
 
@@ -59,7 +62,7 @@ body{
 }
 
 .product-card {
-    width: 90%;
+    flex: 0 0 50%;
     background-color: #fff;
     border: 1px solid #ffffff;
     border-radius: 5%;
@@ -67,6 +70,9 @@ body{
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-card:hover {
@@ -188,7 +194,7 @@ body{
     align-items: center;
 }
 
-/* Media queries : au-delà de 768px */
+/* Media queries :+768px */
 @media (min-width: 768px) {
 
     .story-p{
