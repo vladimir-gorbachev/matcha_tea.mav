@@ -3,105 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Vamatcha</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo_vamatcha.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Jost:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Liu+Jian+Mao+Cao&family=Lobster&family=Lugrasimo&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+3D&family=Rubik+80s+Fade&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="matchaX.css">
+    <link rel="stylesheet" href="matchaM.css">
 
-    <link rel="stylesheet" href="./matchaX.css">
-    <link rel="stylesheet" href="./2.marvin/matchaM.css">
-    
 </head>
-<body>
-        <h1>
-            Contact
-        </h1>
 
-<main>
-    <section class="p_contact">
-        <div class="message_contact">
-            <p>
+<body>
+    <header>
+        <section class="header">
+            <div class="header-menu-burger">
+                <img src="img/icons8-menu-50.png" class="burger-logo">
+            </div>
+            <div class="header-logo" >
+                <a href="index.html"><img src="img/logo_vamatcha.png" class="header-logo" alt="logo Vamatcha"></a>
+            </div>
+            <div class="header-title">
+                <h3>Vamatcha</h3>
+            </div>
+            <div class="shop_and_search">
+                <img src="img/Shopping bag.png" alt="shopping_bag_logo" class="header-logo-search"></a>
+                <img src="img/Search.png" alt="search_logo" class="header-logo-search">
+            </div>
+        </section> 
+        
+        
+
+        <nav class="lateral_nav">
+            <ul class="lateral_nav_list">
+                <li><a href="shop.html">Nos produits</a></li>
+                <li><a href="aboutus.html">À propos</a></li>
+                <li><a href="story.html">Histoire</a></li> 
+                <li><a href="contact.html">Contact</a></li>  
+                <li><img src="img/User.png" alt="user-logo" class="user-logo"></li>   
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Contact</h2>
+        <section class="p_contact">
+            <div class="message_contact">
+                <p>
+                    <h3>
+                            Contactez-nous
+                    </h3>
+                </p>
+                <p>
+                    Chez Vamatcha, nous sommes ravis de pouvoir répondre à toutes vos questions et vous offrir le meilleur service possible. Que ce soit pour des informations sur nos produits, des conseils sur le thé matcha, ou des demandes spécifiques, notre équipe est là pour vous aider.
+                </p>
+                <p>
+                    Comment nous contacter ?
+                </p>
+                <p>
+                    Email : contact@vamatcha.com
+                </p>
+                <p>
+                    Téléphone : +33 1 23 45 67 89
+                </p>
+                <p>
+                    Adresse : 123 Rue des Thés, 75000 Paris, France
+                </p>
+                <p>
+                    Nous sommes disponibles pour :
+                </p>
+                <p>
+                    Répondre à vos questions sur nos produits et leurs bienfaits
+                    Vous aider à choisir le matcha qui correspond à vos préférences
+                </p>
+                <p>
+                    Vous guider pour une commande ou pour toute autre demande
+                    Suivez-nous sur les réseaux sociaux :
+                </p>
+                <ul>
+                    <li>
+                        Instagram : @Vamatcha
+                    </li>
+                    <li>
+                        Facebook : Vamatcha
+                    </li>
+                    <li>
+                        Twitter : @Vamatcha
+                    </li>
+                </ul>
+                    Nous vous remercions pour l’intérêt que vous portez à nos produits et nous serons heureux de vous apporter une réponse rapide et personnalisée.
+                </p>
+            </div>
+            <div class="form">
                 <h3>
-                         Contactez-nous
+                        Formulaire
                 </h3>
-            </p>
-            <p>
-                Chez Vamatcha, nous sommes ravis de pouvoir répondre à toutes vos questions et vous offrir le meilleur service possible. Que ce soit pour des informations sur nos produits, des conseils sur le thé matcha, ou des demandes spécifiques, notre équipe est là pour vous aider.
-            </p>
-            <p>
-                Comment nous contacter ?
-            </p>
-            <p>
-                Email : contact@vamatcha.com
-            </p>
-            <p>
-                Téléphone : +33 1 23 45 67 89
-            </p>
-            <p>
-                Adresse : 123 Rue des Thés, 75000 Paris, France
-            </p>
-            <p>
-                Nous sommes disponibles pour :
-            </p>
-            <p>
-                Répondre à vos questions sur nos produits et leurs bienfaits
-                Vous aider à choisir le matcha qui correspond à vos préférences
-            </p>
-            <p>
-                Vous guider pour une commande ou pour toute autre demande
-                Suivez-nous sur les réseaux sociaux :
-            </p>
-            <ul>
-                <li>
-                    Instagram : @Vamatcha
+                <p>
+                    Civilité
+                </p>
+                <select name="Civilité">
+                    <option value="Selctionner une des options">Selectionnez une des options</option>
+                    <option value="Mme">Madame</option>
+                    <option value="Mr">Monsieur</option>
+                </select>
+                
+
+                <p>
+                    Enter votre prénom :
+                </p>
+
+                <input name="name" value="Prénom">
+
+                <p>
+                    Entre votre mail :
+                </p>
+
+                <input name="mail" value="Mail">
+
+                <p>
+                    Entre votre message :
+                </p>
+
+                <textarea>
+                </textarea>
+                <span >
+                    <input type="submit">
+                </span>
+            </div>
+        </section>
+        
+
+    </main> 
+    <footer>
+        <a href="index.html"> <img src="./img/logo_vamatcha.png" class="logo_vamatcha" id="logo_vamatcha_footer" alt="logo Vamatcha"> </a> 
+        <nav class="footer_nav">
+            <ul class="footer_list">
+                <li class="footer_list">
+                    <a href="./shop.html"> Nos Produits </a>
                 </li>
-                <li>
-                    Facebook : Vamatcha
+                <li class="footer_list">
+                    <a href="./apropos.html"> A propos </a>
                 </li>
-                <li>
-                    Twitter : @Vamatcha
+                <li class="footer_list">
+                    <a href="histoire.html"> L'Histoire du VaMatcha </a>
+                </li>
+                <li class="footer_list">
+                    <a href="./contact.html"> Contact </a>
                 </li>
             </ul>
-                Nous vous remercions pour l’intérêt que vous portez à nos produits et nous serons heureux de vous apporter une réponse rapide et personnalisée.
-            </p>
-        </div>
-        <div class="form">
-            <h3>
-                    Formulaire
-            </h3>
-            <p>
-                Civilité
-            </p>
-            <select name="Civilité">
-                <option value="Selctionner une des options">Selectionnez une des options</option>
-                <option value="Mme">Madame</option>
-                <option value="Mr">Monsieur</option>
-            </select>
-            
+        </nav>
 
-            <p>
-                Enter votre prénom :
-            </p>
-
-            <input name="name" value="Prénom">
-
-            <p>
-                Entre votre mail :
-            </p>
-
-            <input name="mail" value="Mail">
-
-            <p>
-                Entre votre message :
-            </p>
-
-            <textarea>
-            </textarea>
-            <span >
-                <input type="submit">
-            </span>
-        </div>
-    </section>
-    
-
-</main> 
+    </footer>
 
 </body>
 </html>
