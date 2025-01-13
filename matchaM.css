@@ -3,6 +3,29 @@ body{
     font-weight: 400;
     font-style: normal;
     }
+
+    @media  screen and (max-width : 768px) {
+        .p_contact{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 10%;
+        }
+
+        .table{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .choice{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    
+
+    }
     
     .profil h1{
         font-family: "Kaushan Script", serif;
@@ -60,7 +83,7 @@ body{
     padding-top: 50px;
 }
 
-h3{
+h4{
     font-weight: bold;
     text-align: center;
     background-color: #74A12E;
