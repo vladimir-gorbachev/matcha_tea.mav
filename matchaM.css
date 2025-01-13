@@ -1,0 +1,152 @@
+body{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .profil h1{
+        font-family: "Kaushan Script", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 64px;
+        color:#E0CAA5;
+        font-weight: bold;
+    }
+    
+    .profil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .list ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .list li{
+        background-color: #9BBC69;
+        text-align: center;
+        padding: 5px;
+        border-radius: 15px ;
+    }
+    
+    .profil span{
+        border-bottom: solid 2px;
+        font-weight: bold;
+    }
+    
+.form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    gap: 1.5em;
+}
+.message_contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;   
+    border-right: solid 3px;  
+    gap: 1em;
+    padding-right: 50px;
+}
+
+.form{
+    width: 50%;
+    padding-top: 50px;
+}
+
+h3{
+    font-weight: bold;
+    text-align: center;
+    background-color: #74A12E;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form p{
+    text-align: center;
+}
+
+.form input{
+    height: 50px;
+}
+
+
+
+.p_contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10%;
+}
+
+.user p{
+    font-weight: bold;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.table img{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.product{
+    text-align: center;
+    border:solid 1px ;
+    background-color: white;
+
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    gap: 12em;
+    
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+input[type="name"]{
+    width: 50px;
+}
+
+.submit input[type="submit" ]{
+    background-color: #74A12E;
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+span input[type="submit"]{
+   background-color: #74A12E;
+  width: 100%;
+  border-radius: 10px;
+  
+}
